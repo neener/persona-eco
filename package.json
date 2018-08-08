@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "Buffy Persona",
   "version": "0.0.1",
-  "description": "",
+  "description": "The most comfortable comforter ever made.",
   "main": "",
   "scripts": {
     "build": "DEBUG=metalsmith* npm run clean && npm run build:webpack && npm run build:metalsmith",
@@ -27,7 +27,7 @@
     "prepush": "npm run test"
   },
   "repository": {
-    "url": "",
+    "url": "https://github.com/buffyco/persona",
     "type": "git"
   },
   "keywords": [
@@ -36,9 +36,9 @@
   "author": "Alice Barker <woof@puppy.codes>",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/buffyco/persona/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/buffyco/persona",
   "files": [
     "src",
     "dist",
