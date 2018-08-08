@@ -1,5 +1,5 @@
 html {
-  font-family: 'palatino';
+  font-family: 'helvetica';
   text-transform: uppercase;
 
   &.no-js body::before {
@@ -10,4 +10,5 @@ html {
 body {
   padding: 5vw 5vh;
   background-color: #fff;
+  min-height: 2000px;
 }

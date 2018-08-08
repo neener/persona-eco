@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
 })
 
 export default function () {
-  console.log('foooo')
+  console.log('hella default')
 }

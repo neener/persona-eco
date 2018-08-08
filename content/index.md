@@ -1,7 +1,4 @@
 ---
-title: woof!
+title: Buffy Persona
 ---
-<div class="menu">
-  <div class="logo"><img src="./logo.svg" alt="woof"/></div>
-  </div>
-</div>
+<div id="pin">this is content <br> inside a section</div>

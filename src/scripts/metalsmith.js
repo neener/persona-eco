@@ -28,7 +28,10 @@ export default new Metalsmith(paths.projectRoot)
     engine: 'handlebars',
     default: 'default.html',
     partials: {
-      footer: 'partials/footer'
+      header: 'partials/header',
+      section: 'partials/section',
+      footer: 'partials/footer',
+      endscripts: 'partials/endscripts'
     },
     // to avoid conflics, we match only html files
     pattern: '**/*.html',
