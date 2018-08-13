@@ -29,6 +29,7 @@ export default new Metalsmith(paths.projectRoot)
     default: 'default.html',
     partials: {
       header: 'partials/header',
+      nav: 'partials/nav',
       section: 'partials/section',
       footer: 'partials/footer',
       endscripts: 'partials/endscripts'
