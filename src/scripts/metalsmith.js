@@ -4,6 +4,7 @@ import markdown from 'metalsmith-markdownit'
 import layouts from 'metalsmith-layouts'
 import assets from 'metalsmith-assets'
 import fingerprint from 'metalsmith-fingerprint-ignore'
+import contentful from 'contentful-metalsmith'
 
 import paths from '../config/paths'
 import { StatisticsPlugin } from './metalsmith-helpers'
@@ -21,6 +22,10 @@ export default new Metalsmith(paths.projectRoot)
   .use(assets({
     source: './dist/fonts',
     destination: './fonts'
+  }))
+  .use(contentful({
+    space_id: 'xh00p26p24lx',
+    access_token: '3e43e1303805449f8c899fa0dca71b09722b0473749df546ee0223e59712c3c0'
   }))
   .use(fingerprint({ pattern: 'assets/page.css' }))
   .use(fingerprint({ pattern: 'assets/immediate.js' }))
