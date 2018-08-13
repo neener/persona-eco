@@ -9,7 +9,8 @@ module.exports = {
   metalsmithSource: 'content',
   metalsmithDestination: join('dist', 'site'),
   // Webpack
-  webpackSource: join(projectRoot, 'src', 'assets'),
+  webpackSource:
+  join(projectRoot, 'src', 'assets'),
   webpackDestination: join(projectRoot, 'dist', 'assets'),
   webpackPublicPath: '/assets/',
   // Server

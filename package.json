@@ -101,6 +101,8 @@
     "write-file-webpack-plugin": "^4.0.2"
   },
   "dependencies": {
-    "scrollmagic": "^2.0.5"
+    "file-loader": "^1.1.11",
+    "scrollmagic": "^2.0.5",
+    "url-loader": "^1.0.1"
   }
 }

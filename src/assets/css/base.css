@@ -1,9 +1,27 @@
-html {
-  font-family: 'helvetica';
-  text-transform: uppercase;
+@font-face {
+  font-family: 'StandardCT';
+  src: url('/fonts/StandardCT-Regular.woff2') format('woff2'),
+       url(/fonts/StandardCT-Regular.woff') format('woff');
+       font-weight: normal;
+}
+@font-face {
+  font-family: 'StandardCT';
+  src: url('/fonts/StandardCT-Light.woff2') format('woff2'),
+       url('/fonts/StandardCT-Light.woff') format('woff');
+       font-weight: lighter;
+}
 
+@font-face {
+  font-family: 'StandardCT';
+  src: url('/fonts/StandardCT-Bold.woff2') format('woff2'),
+       url('/fonts/StandardCT-Bold.woff') format('woff');
+       font-weight: Bold;
+}
+
+html {
+  font-family: 'StandardCT';
   &.no-js body::before {
-    content: 'Javascript is disabled or not ready yet';
+    content: 'You should probably enable or upgrade javascript';
   }
 }
 
@@ -13,14 +31,21 @@ body {
   min-height: 2000px;
 }
 
+/* nav */
 
-/* menu */
+nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
 
 #menuToggle {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 0;
+  left: 0;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -76,8 +101,9 @@ body {
 }
 
 #menu {
-  position: absolute;
-  width: 300px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
