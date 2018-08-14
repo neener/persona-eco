@@ -1,0 +1,15 @@
+<section id="splash">
+  {{#each data.contentTypes.splash }}
+  <div class="entry" style="background-image: url({{fields.background.fields.file.url}})">
+    <div class="text-container"> 
+      <div class="callout">
+      {{fields.callout}}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</section>
+
+<section class="text-block">
+  <div> {{{contents}}} </div>
+</section>

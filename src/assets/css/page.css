@@ -9,13 +9,35 @@
   width: 100px;
 }
 
-#splash {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
+#splash .entry {
   height: 100vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#logo .entry img {
+width: 100px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.callout {
+  color: white;
+  font-size: 40px;
+  font-family: 'StandardCT';
+  font-weight: normal;
+
 }

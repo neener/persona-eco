@@ -19,6 +19,7 @@
 }
 
 html {
+  height: 100%;
   font-family: 'StandardCT';
   &.no-js body::before {
     content: 'You should probably enable or upgrade javascript';
@@ -26,9 +27,23 @@ html {
 }
 
 body {
-  padding: 5vw 5vh;
+  height: 100%;
   background-color: #fff;
-  min-height: 2000px;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 5%;
+width: 100%;
+position: fixed;
+z-index: 1;
+margin-top: 20px;
 }
 
 /* nav */

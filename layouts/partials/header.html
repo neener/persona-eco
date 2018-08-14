@@ -1,3 +1,9 @@
 <header>
-
+<div id="logo">
+  <div class="entry">
+{{#each data.contentTypes.logo }}
+<img src="{{ fields.logo.fields.file.url }}?w=200">
+{{/each}}
+  </div>
+</div>
 </header>
