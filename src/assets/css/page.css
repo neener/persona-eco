@@ -8,3 +8,14 @@
 .logo img {
   width: 100px;
 }
+
+#splash {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,6 +1,7 @@
 <html class="no-js">
   <head>
     <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ fingerprint.[assets/page.css] }}"/>
     <script src="{{ fingerprint.[assets/immediate.js] }}"></script>
     <script src="{{ fingerprint.[assets/page.js] }}" defer></script>
@@ -16,6 +17,7 @@
   <body>
       {{> nav}}
       {{> header}}
+      {{> splash}}
 
     <div class="content">
       {{> section}}
