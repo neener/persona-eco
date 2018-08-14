@@ -2,9 +2,9 @@
   {{#each data.contentTypes.splash }}
   <div class="entry" style="background-image: url({{fields.background.fields.file.url}})">
     <div class="text-container">
-      <div class="callout">
+      <!-- <div class="callout">
       {{fields.callout}}
-      </div>
+      </div> -->
     </div>
   </div>
   {{/each}}
@@ -12,19 +12,19 @@
 
 {{#each data.contentTypes.section }}
 <section class="{{#if fields.fullHeight }}tall{{ else }}short{{/if}} story">
-  <div class="story-container">
+  <div class="{{#if fields.background }}callout-container{{ else }}story-container{{/if}}">
     <div class="header-text">
       <h2>{{fields.headerText}}</h2>
     </div>
-    <div class="description">
-      <h4>{{fields.description}}</h4>
+    <div class="description {{#if fields.background }}hidden{{ else }}{{/if}}">
+      <span>{{fields.description}}</span>
     </div>
   </div>
 </section>
-  {{/each}}
+{{/each}}
 
-  {{#each data.contentTypes.product }}
-  <section class="product">
-    <div> </div>
-  </section>
-    {{/each}}
+{{#each data.contentTypes.product }}
+<section class="product">
+  <div> </div>
+</section>
+{{/each}}
