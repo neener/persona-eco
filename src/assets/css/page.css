@@ -41,3 +41,19 @@ width: 100px;
   font-weight: normal;
 
 }
+
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.tall {
+  height: 100vh;
+}
+
+.short {
+  height: 50vh;
+}

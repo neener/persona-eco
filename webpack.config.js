@@ -3,7 +3,6 @@ const Webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const WriteFilePlugin = require('write-file-webpack-plugin')
 const paths = require('./src/config/paths')
-
 const __DEV__ = process.env.NODE_ENV !== 'production'
 const __PROD__ = process.env.NODE_ENV === 'production'
 
