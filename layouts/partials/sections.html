@@ -1,15 +1,3 @@
-<section id="splash">
-  {{#each data.contentTypes.splash }}
-  <div class="entry" style="background-image: url({{fields.background.fields.file.url}})">
-    <div class="text-container">
-      <!-- <div class="callout">
-      {{fields.callout}}
-      </div> -->
-    </div>
-  </div>
-  {{/each}}
-</section>
-
 {{#each data.contentTypes.section }}
 <section class="{{#if fields.fullHeight }}tall{{ else }}short{{/if}} story">
   <div class="{{#if fields.background }}callout-container{{ else }}story-container{{/if}}">

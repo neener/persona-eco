@@ -1,1 +1,10 @@
-<footer>this is a footer</footer>
+<footer>
+
+<ul>
+  {{#each data.contentTypes.footer }}
+  <li><img src="{{fields.logo.fields.file.url}}?w=200"></li>
+  <li>{{fields.callout}}</li>
+  {{/each}}
+</ul>
+
+</footer>
