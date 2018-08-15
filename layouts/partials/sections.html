@@ -1,9 +1,10 @@
 {{#each data.contentTypes.section }}
 <section class="{{#if fields.fullHeight }}tall{{ else }}short{{/if}} story">
-  <div class="{{#if fields.background }}callout-container{{ else }}story-container{{/if}}">
+  <div {{#if fields.background }}class="callout-container" style="background-image: url('{{fields.background.fields.file.url}}');"{{ else }}class="story-container" {{/if}}>
     <div class="header-text">
-      <h2>{{fields.headerText}}</h2>
+      {{fields.headerText}}
     </div>
+    <!-- this div will be hidden if a background image is present -->
     <div class="description {{#if fields.background }}hidden{{ else }}{{/if}}">
       <span>{{fields.description}}</span>
     </div>

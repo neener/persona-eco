@@ -6,22 +6,16 @@
     <script src="{{ fingerprint.[assets/immediate.js] }}"></script>
     <script src="{{ fingerprint.[assets/page.js] }}" defer></script>
 
-<!-- CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <style>
 
   {{#each data.contentTypes.splash }}
     @media only screen and (max-width: 768px) {
-.parallax-container {
+#splash {
   background-image: url('{{fields.background.fields.file.url}}');
   }
 }
 @media only screen and (min-width: 600px) {
-.parallax-container {
+#splash {
 background-image: url('{{fields.desktopBackground.fields.file.url}}');
 }
 }
@@ -33,7 +27,6 @@ background-image: url('{{fields.desktopBackground.fields.file.url}}');
       {{> header}}
 
     <div class="container">
-      <div class="parallax-container">
         <section id="splash">
           {{#each data.contentTypes.splash }}
           <div class="entry">
