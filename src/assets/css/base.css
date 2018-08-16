@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'StandardCT';
   src: url('/fonts/StandardCT-Regular.woff2') format('woff2'),
-       url(/fonts/StandardCT-Regular.woff') format('woff');
+       url('/fonts/StandardCT-Regular.woff') format('woff');
        font-weight: normal;
 }
 @font-face {
