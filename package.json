@@ -104,6 +104,7 @@
     "contentful-metalsmith": "^0.11.0",
     "dotenv": "^6.0.0",
     "file-loader": "^1.1.11",
+    "handlebars-helpers": "^0.10.0",
     "rellax": "^1.6.2",
     "scrollmagic": "^2.0.5",
     "url-loader": "^1.0.1"

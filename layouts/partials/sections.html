@@ -1,4 +1,5 @@
 {{#each data.contentTypes.section }}
+{{sortBy.order}}
 <section class="{{#if fields.fullHeight }}tall{{ else }}short{{/if}} story">
   <div {{#if fields.background }}class="callout-container" style="background-image: url('{{fields.background.fields.file.url}}');"{{ else }}class="story-container" {{/if}}>
     <div class="header-text">
@@ -13,6 +14,7 @@
 {{/each}}
 
 {{#each data.contentTypes.product }}
+{{sortBy.order}}
 <section class="product">
   <div> </div>
 </section>

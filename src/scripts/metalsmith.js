@@ -5,11 +5,14 @@ import layouts from 'metalsmith-layouts'
 import assets from 'metalsmith-assets'
 import fingerprint from 'metalsmith-fingerprint-ignore'
 import contentful from 'contentful-metalsmith'
+import helpers from 'handlebars-helpers'
 
 import paths from '../config/paths'
 import { StatisticsPlugin } from './metalsmith-helpers'
 
 const __PROD__ = process.env.NODE_ENV === 'production'
+
+export const array = helpers.array()
 
 export default new Metalsmith(paths.projectRoot)
   .clean(__PROD__)
