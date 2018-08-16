@@ -90,15 +90,13 @@ width: 100px;
 
 }
 
-.description {
+.story .description {
   font-size: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-
-
 
 
 
@@ -118,4 +116,9 @@ justify-content: center;
 
 .callout-container .header-text {
   color: white;
+}
+
+
+.pressure-tab .description {
+  font-size: 40px;
 }

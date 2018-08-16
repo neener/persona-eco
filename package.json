@@ -105,6 +105,7 @@
     "dotenv": "^6.0.0",
     "file-loader": "^1.1.11",
     "handlebars-helpers": "^0.10.0",
+    "pressure": "^2.1.2",
     "rellax": "^1.6.2",
     "scrollmagic": "^2.0.5",
     "url-loader": "^1.0.1"

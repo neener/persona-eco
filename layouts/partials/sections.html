@@ -13,6 +13,15 @@
 </section>
 {{/each}}
 
+<section class="pressure-tab">
+  {{#each data.contentTypes.pressureTab }}
+  <div class="tab">
+    <div class="title">{{fields.title}}</div>
+    <div class="description">{{fields.description}}</div>
+  </div>
+  {{/each}}
+</section>
+
 {{#each data.contentTypes.product }}
 {{sortBy.order}}
 <section class="product">
