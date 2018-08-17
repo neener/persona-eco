@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'StandardCT';
+  font-family: 'StandardCT-Regular';
   src: url('/fonts/StandardCT-Regular.woff2') format('woff2'),
        url('/fonts/StandardCT-Regular.woff') format('woff');
        font-weight: normal;
 }
 @font-face {
-  font-family: 'StandardCT';
+  font-family: 'StandardCT-Light';
   src: url('/fonts/StandardCT-Light.woff2') format('woff2'),
        url('/fonts/StandardCT-Light.woff') format('woff');
        font-weight: lighter;
 }
 
 @font-face {
-  font-family: 'StandardCT';
+  font-family: 'StandardCT-Bold';
   src: url('/fonts/StandardCT-Bold.woff2') format('woff2'),
        url('/fonts/StandardCT-Bold.woff') format('woff');
-       font-weight: Bold;
+       font-weight: bold;
 }
 
 html {
@@ -31,7 +31,7 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0;
-
+  font-family: StandardCT-Regular;
 }
 
 ul {
