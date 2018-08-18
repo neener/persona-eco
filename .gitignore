@@ -1,7 +1,7 @@
 .env
 
 #outputs
-dist
+dist/site
 
 # folder nonsense
 *.DS_Store
