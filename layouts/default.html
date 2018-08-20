@@ -22,6 +22,12 @@ background-image: url('{{fields.desktopBackground.fields.file.url}}');
 }
 }
   {{/each}}
+
+{{#each data.contentTypes.product }}
+  .thanks::before {
+    content: '{{fields.thanks}}';
+  }
+  {{/each}}
     </style>
   </head>
   <body>

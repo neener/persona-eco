@@ -25,7 +25,7 @@
   $(function() {
   $('#{{fields.formKeep}}').submit(function(event) {
     event.preventDefault();
-    e.stopImmediatePropagation();
+    event.stopImmediatePropagation();
 
     var formEl = $(this);
     var submitButton = $('input[type=submit]', formEl);
@@ -39,9 +39,14 @@
       data: formEl.serialize(),
       beforeSend: function() {
         submitButton.prop('disabled', 'disabled');
+        $('#{{fields.formKeep}} button').addClass('loader');
+
       }
     }).done(function(data) {
       submitButton.prop('disabled', false);
+      $('#{{fields.formKeep}} button').removeClass('loader');
+      $('#{{fields.formKeep}} .input-container').addClass('done');
+      $('#{{fields.formKeep}}').addClass('thanks');
     });
   });
 });

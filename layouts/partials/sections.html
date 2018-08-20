@@ -49,13 +49,16 @@
       <div class="signup">
         <form id="{{fields.formKeep}}" action="https://formkeep.com/f/{{fields.formKeep}}" method="POST" accept-charset="UTF-8">
           <input type="hidden" name="utf8" value="✓">
-          <input placeholder="{{fields.inputText}}" type="email" id="email-address" name="email">
-          <button type="submit">--></button>
+          <div class="input-container">
+          <input type="email" id="email-address" name="email">
+          <div class="input-text">{{fields.inputText}}</div>
+          <button type="submit" style="background-image:url('{{fields.inputLoader.fields.file.url}}')"><i class="arrow right"></i></button>
+          </div>
         </form>
         <div id="result-{{fields.formKeep}}"></div>
       </div>
     </div>
-    
+
     {{/each}}
   </div>
 </section>

@@ -512,39 +512,112 @@ margin-top: 15px;
 margin-bottom: 15px;
 }
 .signup {
-margin: auto;
 text-align: center;
-
+position: relative;
+width: 190px;
+margin: auto;
+margin-top: 40px;
+margin-bottom: 40px;
+border-bottom: 1px solid black;
+height: 25px;
 }
 .signup input {
-  border: 1px solid white;
-  background-color: #83E5B2;
-  color: white;
-  padding: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 0;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 0;
+  z-index: 1;
+  background-color: transparent;
+  position: relative;
+  font-size: 20px;
+  padding: 0;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  width: 190px;
+  opacity: 0;
 }
 .signup button {
   border: 0px;
   position: absolute;
   background-color: transparent;
-  margin-left: -35px;
-  margin-top: 22px;
   color: white;
+  right: -15px;
+  top: -6px;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  cursor: pointer;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
+}
+.signup button.loader {
+    background-size: 60%;
+}
+.signup button.loader i {
+  border: 0px;
+}
+.done {
+  opacity: 0;
+  pointer-events: none;
+}
+.thanks::before {
+position: relative;
+float: left;
+font-size: 20px;
+}
+.input-container {
+  display: block;
+  width: 190px;
+  margin: auto;
+  position: relative;
+}
+.input-text {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 0;
+  font-size: 20px;
+  top: 3px;
+  left: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+.signup input:focus {
+  opacity: 1;
+}
+.signup input:focus + .input-text {
+  top: -25px;
+  left: 0px;
+  font-size: 15px;
+}
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    left: -2px;
+position: relative;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 :focus {
   background-color: transparent;
   outline:0;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: white;
+  color: black;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: white;
+  color: black;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: white;
+  color: black;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: white;
+  color: black;
 }
