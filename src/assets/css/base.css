@@ -18,6 +18,13 @@
        font-weight: bold;
 }
 
+@font-face {
+  font-family: 'CooperBlackLTPro';
+  src: url('/fonts/CooperBlackLTPro.woff2') format('woff2'),
+       url('/fonts/CooperBlackLTPro.woff') format('woff');
+       font-weight: bold;
+}
+
 html {
   height: 100%;
   font-family: 'StandardCT';
