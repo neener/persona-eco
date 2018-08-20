@@ -6,10 +6,13 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.logo img {
+#logo img {
   width: 84px;
 }
 
+#logo {
+  margin-top: 30px;
+}
 
 #splash {
   height: 100vh;
@@ -34,7 +37,7 @@ width: 100px;
   align-items: center;
   height: 100%;
   font-size: 60px;
-  width: 224px;
+  width: 300px;
   margin-left: 24px;
   justify-content: left;
 }
@@ -42,9 +45,11 @@ width: 100px;
 @media only screen and (min-width: 768px) {
 
   .text-container {
-    width: 500px;
+    width: 600px;
     justify-content: center;
     margin: auto;
+    font-size: 120px;
+    margin-left: 40px;
   }
 
 }
@@ -62,6 +67,10 @@ width: 100px;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+}
+
+.story-container {
+      max-width: 600px;
 }
 
 
@@ -101,6 +110,7 @@ width: 100px;
 @media only screen and (min-width: 768px){
   .story .header-text {
     font-size: 70px;
+    text-align: center;
   }
 
 }
@@ -113,6 +123,8 @@ width: 100px;
   padding-top: 10px;
   text-align: left;
   line-height: 26px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 
@@ -136,7 +148,7 @@ font-family: CooperBlackLTPro;
   color: white;
   font-size: 40px;
   line-height: 40px;
-  max-width: 330px;
+  max-width: 400px;
 }
 
 
@@ -258,6 +270,7 @@ opacity: 1;
 
 .pressure-circle.active {
   z-index: 10;
+  border: 0;
 }
 
 
@@ -313,31 +326,49 @@ display: block;
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
+  width: 400px;
 }
 
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (min-width: 768px) {
   .product-container {
     margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .product-container {
+    margin: auto;
+    margin-right: 10px;
+    width: 100%;
   }
 }
 
 .product-container .description {
   font-size: 20px;
   line-height: 26px;
+  margin-bottom: 20px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .title-slide {
-  position: relative;
-  display: block;
-  margin: auto;
-  width: 100%;
-  min-width: 350px;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+position: relative;
+display: block;
+margin: auto;
+width: 100%;
+height: 600px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+min-width: 350px;
 }
 
 .title-slide .title {
@@ -363,7 +394,9 @@ display: block;
 
 @media only screen and (max-width: 768px) {
   .product-container .description {
-        padding: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-top: 20px;
   }
 }
 
@@ -400,7 +433,7 @@ top: -1px;
 margin: auto;
 display: block;
 text-align: center;
-margin-top: 15px;
+margin-top: 35px;
 margin-bottom: 15px;
 }
 
