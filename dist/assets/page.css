@@ -56,7 +56,7 @@ display: flex;
         justify-content: center;
 height: 5%;
 width: 100%;
-position: fixed;
+position: absolute;
 z-index: 1;
 margin-top: 20px;
 }
@@ -152,6 +152,17 @@ width: 100px;
       -ms-flex-pack: left;
           justify-content: left;
 }
+@media only screen and (min-width: 768px) {
+
+  .text-container {
+    width: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+
+}
 .callout {
   color: white;
   font-family: 'StandardCT-Regular';
@@ -180,7 +191,9 @@ width: 100px;
   height: 100vh;
 }
 .short {
-  height: 50vh;
+  height: 350px;
+  position: relative;
+  margin: auto;
 }
 .story .header-text {
   color: #83E5B2;

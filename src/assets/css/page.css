@@ -39,6 +39,15 @@ width: 100px;
   justify-content: left;
 }
 
+@media only screen and (min-width: 768px) {
+
+  .text-container {
+    width: 500px;
+    justify-content: center;
+    margin: auto;
+  }
+
+}
 
 
 .callout {
@@ -69,7 +78,9 @@ width: 100px;
 }
 
 .short {
-  height: 50vh;
+  height: 350px;
+  position: relative;
+  margin: auto;
 }
 
 
