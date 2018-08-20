@@ -181,10 +181,10 @@ margin-left: 30px;
 .pressure-circle {
   transition: all .85s cubic-bezier(0.40,0,0.60,1);
   height: 100%;
-  max-height: 100px;
+  max-height: 50px;
   width: 100%;
-  max-width: 100px;
-  border-radius: 100px;
+  max-width: 50px;
+  border-radius: 50px;
   text-align: center;
   background-color: white;
   margin-right: 30px;
@@ -203,19 +203,44 @@ margin-left: 30px;
 .pressure-circle::before {
 transition: opacity 0.1s ease-in;
 transition-delay: 0.7s;
-content: '+';
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
+content: ' ';
+background-color: black;
+width: 1px;
+height: 50%;
 font-size: 60px;
-top: 5px;
-position: relative;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+position: absolute;
+margin: auto;
 opacity: 1;
 }
 
+.pressure-circle::after {
+transition: opacity 0.1s ease-in;
+transition-delay: 0.7s;
+content: ' ';
+background-color: black;
+width: 50%;
+height: 1px;
+font-size: 60px;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+position: absolute;
+margin: auto;
+opacity: 1;
+}
+
+
 .pressure-circle.active::before {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.pressure-circle.active::after {
   opacity: 0;
   transition-delay: 0s;
 }
@@ -286,6 +311,11 @@ display: block;
   }
 }
 
+.product-container .description {
+  font-size: 20px;
+  line-height: 26px;
+}
+
 
 .title-slide {
   position: relative;
@@ -297,8 +327,6 @@ display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .title-slide .title {
@@ -329,7 +357,10 @@ display: block;
 }
 
 .product-container .pricing {
-  margin: 20px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
   border: 1px solid #83E5B2;
   border-radius: 5px;
   padding: 20px;
@@ -358,8 +389,8 @@ top: -1px;
 margin: auto;
 display: block;
 text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 
 .signup {
