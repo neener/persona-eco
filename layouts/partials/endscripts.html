@@ -53,4 +53,10 @@
 
 {{/each}}
 
+$('.pressure-tab').each(function() {
+  $(this).find('.pressure-circle').each(function(el) {
+    $(this).addClass('item-' + (el + 1));
+  });
+});
+
 </script>

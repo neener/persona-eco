@@ -136,6 +136,7 @@ width: 100px;
 .callout-container {
 height: 100%;
 width: 100%;
+max-width: 821px;
 background-size: cover;
 background-position: center;
 display: flex;
@@ -160,7 +161,7 @@ justify-content: center;
 }
 
 .tab:nth-child(1) {
-  background: #f4e89e;
+  background: rgba(244, 232, 158, 0.6);
   background: -moz-linear-gradient(left, #f4e89e 0%, #ffbb4f 100%);
   background: -webkit-linear-gradient(left, #f4e89e 0%,#ffbb4f 100%);
   background: linear-gradient(to right, #f4e89e 0%,#ffbb4f 100%);
@@ -170,8 +171,8 @@ justify-content: center;
 }
 
 .tab:nth-child(2) {
-background: #ffbb4f;
-background: -moz-linear-gradient(left, #ffbb4f 0%, #f9c2ca 100%);
+background: rgba(255, 187, 79, 0.6);
+background: -moz-linear-gradient(left,  #ffbb4f 0%, #f9c2ca 100%);
 background: -webkit-linear-gradient(left, #ffbb4f 0%,#f9c2ca 100%);
 background: linear-gradient(to right, #ffbb4f 0%,#f9c2ca 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbb4f', endColorstr='#f9c2ca',GradientType=1 );
@@ -180,7 +181,7 @@ border-bottom: 1px solid black;
 }
 
 .tab:nth-child(3) {
-background: #f9c2ca;
+background: rgba(249, 194, 202, 0.6);
 background: -moz-linear-gradient(left, #f9c2ca 0%, #73e0a3 100%);
 background: -webkit-linear-gradient(left, #f9c2ca 0%,#73e0a3 100%);
 background: linear-gradient(to right, #f9c2ca 0%,#73e0a3 100%);
@@ -219,6 +220,21 @@ margin-left: 30px;
   -webkit-box-align: initial;
   -webkit-box-pack: center;
   justify-content: right;
+  transform: scale(1);
+  left: 0;
+  top: 0;
+}
+
+.pressure-circle.item-1.active {
+      background-color: #FFBB4F;
+}
+
+.pressure-circle.item-2.active {
+      background-color: #F9C2CA;
+}
+
+.pressure-circle.item-3.active {
+      background-color: #5B4974;
 }
 
 
@@ -271,14 +287,17 @@ opacity: 1;
 .pressure-circle.active {
   z-index: 10;
   border: 0;
+  transform: scale(40);
+  left: -50%;
+  top: 50%;
+
 }
 
 
 .pressure-tab .description {
   transition: all 0.6s ease-in-out;
-  font-size: 40px;
+  font-size: 50px;
   opacity: 0;
-  font-size: 30px;
   position: fixed;
   z-index: 10;
   height: 100%;
@@ -294,10 +313,33 @@ opacity: 1;
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  color: white;
 }
 
 .pressure-tab .show-description {
   opacity: 1;
+}
+
+.pressure-tab {
+max-width: 819px;
+margin: auto;
+margin-top: 0px;
+margin-bottom: 40px;
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+
+@media only screen and (min-width: 819px){
+  .pressure-tab {
+    width: 819px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .pressure-tab {
+    margin-bottom: 0px;
+  }
 }
 
 .product {
@@ -320,15 +362,12 @@ display: block;
 }
 
 
-
-
 .product-container {
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
   width: 400px;
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -356,6 +395,7 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 
