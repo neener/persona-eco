@@ -534,10 +534,23 @@ height: 25px;
   pointer-events: none;
 }
 
-.thanks::before {
-position: relative;
-float: left;
-font-size: 20px;
+.thanks {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+  background-color: #83E5B2;
+  font-family: CooperBlackLTPro;
+}
+
+.thanks-container {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
 }
 
 .input-container {
