@@ -38,5 +38,9 @@ background-image: url('{{fields.desktopBackground.fields.file.url}}');
 
       {{> footer}}
       {{> endscripts}}
+      <script type="text/javascript">
+      <!-- Successful Eco Signup -->
+      fbq('track', 'CompleteRegistration', {content_name: 'Eco'});
+      </script>
   </body>
 </html>
