@@ -160,7 +160,7 @@ width: 100px;
 @media only screen and (min-width: 768px) {
 
   .text-container {
-    width: 600px;
+    width: 300px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
