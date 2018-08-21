@@ -1,0 +1,42 @@
+<html class="no-js">
+  <head>
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ fingerprint.[assets/page.css] }}"/>
+    <script src="{{ fingerprint.[assets/immediate.js] }}"></script>
+    <script src="{{ fingerprint.[assets/page.js] }}" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pressure/2.1.2/jquery.pressure.min.js"></script>
+    <style>
+
+  {{#each data.contentTypes.splash }}
+    @media only screen and (max-width: 768px) {
+#splash {
+  background-image: url('{{fields.background.fields.file.url}}');
+  }
+}
+@media only screen and (min-width: 600px) {
+#splash {
+background-image: url('{{fields.desktopBackground.fields.file.url}}');
+}
+}
+  {{/each}}
+
+    </style>
+  </head>
+  <body>
+      {{> header}}
+
+    <div class="container empty">
+      <div class="thanks">
+<div class="thanks-container">
+        Thank you!
+</div>
+      </div>
+    </div>
+
+      {{> footer}}
+      {{> endscripts}}
+  </body>
+</html>
