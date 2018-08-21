@@ -21,37 +21,15 @@
   });
 
 
-  {{#each data.contentTypes.product }}
-  $(function() {
-  $('#{{fields.formKeep}}').submit(function(event) {
-    event.preventDefault();
-    e.stopImmediatePropagation();
 
-    var formEl = $(this);
-    var submitButton = $('input[type=submit]', formEl);
 
-    $.ajax({
-      type: 'POST',
-      url: formEl.prop('action'),
-      accept: {
-        javascript: 'application/javascript'
-      },
-      data: formEl.serialize(),
-      beforeSend: function() {
-        submitButton.prop('disabled', 'disabled');
-        $('#{{fields.formKeep}} button').addClass('loader');
-
-      }
-    }).done(function(data) {
-      submitButton.prop('disabled', false);
-      $('#{{fields.formKeep}} button').removeClass('loader');
-      $('#{{fields.formKeep}} .input-container').addClass('done');
-      $('#{{fields.formKeep}}').addClass('thanks');
-    });
-  });
+$('#2c3df9f064a7').submit(function(event) {
+  window.href = 'thanks-botanic.html'
 });
 
-{{/each}}
+$('#50a2e70e31c0').submit(function(event){
+  window.href = 'thanks-cosmic.html'
+});
 
 $('.pressure-tab').each(function() {
   $(this).find('.pressure-circle').each(function(el) {
