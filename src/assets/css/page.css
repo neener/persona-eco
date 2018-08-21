@@ -45,7 +45,7 @@ width: 100px;
 @media only screen and (min-width: 768px) {
 
   .text-container {
-    width: 600px;
+    width: 300px;
     justify-content: center;
     margin: auto;
     font-size: 120px;
