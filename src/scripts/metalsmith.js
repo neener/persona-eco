@@ -27,8 +27,8 @@ export default new Metalsmith(paths.projectRoot)
     destination: './fonts'
   }))
   .use(contentful({
-    space_id: 'xh00p26p24lx',
-    access_token: '3e43e1303805449f8c899fa0dca71b09722b0473749df546ee0223e59712c3c0'
+    space_id: 'pw2rnn4cflle',
+    access_token: '9b3b5e9310586a9c5ef044b426b06afb0960d178a226966cd4c2995bdab678a7'
   }))
   .use(fingerprint({ pattern: 'assets/page.css' }))
   .use(fingerprint({ pattern: 'assets/immediate.js' }))
