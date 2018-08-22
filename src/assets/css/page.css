@@ -1,10 +1,20 @@
 @import 'base.css';
 
 .content {
+  max-width: 768px;
   margin: auto;
   background-color: white;
     -webkit-overflow-scrolling: touch;
 }
+@media only screen and (min-width: 768px){
+.content {
+  margin: auto;
+    margin-top: 40px;
+  background-color: white;
+    -webkit-overflow-scrolling: touch;
+}
+}
+
 
 #logo img {
   width: 84px;
@@ -321,7 +331,7 @@ opacity: 1;
 }
 
 .pressure-tab {
-max-width: 819px;
+width: 100%;
 margin: auto;
 margin-top: 0px;
 margin-bottom: 40px;
@@ -329,9 +339,8 @@ border-right: 1px solid black;
 border-left: 1px solid black;
 }
 
-@media only screen and (min-width: 819px){
+@media only screen and (min-width: 768px){
   .pressure-tab {
-    width: 819px;
     margin-bottom: 0px;
   }
 }
@@ -367,6 +376,15 @@ display: block;
   margin-left: 10px;
   margin-right: 10px;
   width: 400px;
+}
+
+.product-container:nth-child(1) {
+  margin-left: 0;
+
+}
+.product-container:nth-child(2) {
+  margin-right: 0;
+
 }
 
 
