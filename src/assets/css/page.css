@@ -233,6 +233,7 @@ margin-left: 30px;
   transform: scale(1);
   left: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .pressure-circle.item-1.active {
@@ -244,26 +245,24 @@ margin-left: 30px;
 }
 
 .pressure-circle.item-3.active {
-      background-color: #5B4974;
+  background-color: #5B4974;
 }
 
-
-
 .pressure-circle::before {
-transition: opacity 0.1s ease-in;
-transition-delay: 0.7s;
-content: ' ';
-background-color: black;
-width: 1px;
-height: 50%;
-font-size: 60px;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-position: absolute;
-margin: auto;
-opacity: 1;
+  transition: opacity 0.1s ease-in;
+  transition-delay: 0.7s;
+  content: ' ';
+  background-color: black;
+  width: 1px;
+  height: 50%;
+  font-size: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  opacity: 1;
 }
 
 .pressure-circle::after {
@@ -384,7 +383,6 @@ display: block;
 }
 .product-container:nth-child(2) {
   margin-right: 0;
-
 }
 
 

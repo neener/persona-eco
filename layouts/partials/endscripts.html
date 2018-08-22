@@ -1,7 +1,8 @@
 <script type="text/javascript">
   $('.pressure-circle').pressure ({
     start: function(event){
-      console.log("start")
+      console.log("start");
+          pCircle._tippy.hide()
     },
     change: function(force, event){
       $(this).css('transform', 'scale(40)');
@@ -25,5 +26,42 @@
       $(this).addClass('item-' + (el + 1));
     });
 });
+
+
+/* tooltip */
+
+  tippy('.pressure-circle', {
+    arrow: true,
+    arrowType: 'round',
+    size: 'large',
+    animation: 'fade',
+    hideOnClick: true
+  });
+
+  const pCircle = document.querySelector('.pressure-circle')
+  tippy(pCircle)
+
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
+  $(window).on('resize scroll', function() {
+    $('.pressure-tab').each(function() {
+      if ($(this).isInViewport()) {
+        setTimeout(function(){
+           pCircle._tippy.show()
+         }, 1000);
+
+      } else {
+        pCircle._tippy.hide()
+      }
+    });
+  });
 
 </script>

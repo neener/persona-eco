@@ -346,6 +346,7 @@ margin-left: 30px;
           transform: scale(1);
   left: 0;
   top: 0;
+  cursor: pointer;
 }
 .pressure-circle.item-1.active {
       background-color: #FFBB4F;
@@ -354,25 +355,25 @@ margin-left: 30px;
       background-color: #F9C2CA;
 }
 .pressure-circle.item-3.active {
-      background-color: #5B4974;
+  background-color: #5B4974;
 }
 .pressure-circle::before {
--webkit-transition: opacity 0.1s ease-in;
-transition: opacity 0.1s ease-in;
--webkit-transition-delay: 0.7s;
-        transition-delay: 0.7s;
-content: ' ';
-background-color: black;
-width: 1px;
-height: 50%;
-font-size: 60px;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-position: absolute;
-margin: auto;
-opacity: 1;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+  content: ' ';
+  background-color: black;
+  width: 1px;
+  height: 50%;
+  font-size: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  opacity: 1;
 }
 .pressure-circle::after {
 -webkit-transition: opacity 0.1s ease-in;
@@ -496,7 +497,6 @@ display: block;
 }
 .product-container:nth-child(2) {
   margin-right: 0;
-
 }
 @media only screen and (min-width: 768px) {
   .product-container {
