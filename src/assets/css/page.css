@@ -64,11 +64,22 @@ width: 100px;
 
 }
 
+@media only screen and (max-width: 480px) {
+
+.text-container {
+    align-items: flex-end;
+  }
+  .callout {
+      top: -30px;
+  }
+
+}
 
 .callout {
   color: white;
   font-family: 'StandardCT-Regular';
   font-weight: normal;
+  position: relative;
 }
 
 .story {
