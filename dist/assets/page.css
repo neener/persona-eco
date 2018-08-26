@@ -700,6 +700,15 @@ margin-bottom: 15px;
 .signup input:focus {
 
 }
+label.error {
+position: relative;
+float: left;
+padding-top: 10px;
+color: red;
+font-size: 15px;
+font-style: italic;
+text-align: left;
+}
 :focus {
   background-color: transparent;
   outline:0;
