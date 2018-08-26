@@ -505,56 +505,45 @@ margin-bottom: 15px;
 }
 
 .signup {
-text-align: center;
-position: relative;
-width: 190px;
-margin: auto;
-margin-top: 40px;
-margin-bottom: 40px;
-border-bottom: 1px solid black;
-height: 25px;
+  text-align: center;
+  position: relative;
+  width: 200px;
+  margin: auto;
+  height: 150px;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .signup input {
-  transition: all 0.2s ease-in-out;
   border: 0;
-  font-size: 15px;
   border-radius: 0;
   z-index: 1;
-  background-color: transparent;
+  background-color: #eaeaea;
   position: relative;
-  font-size: 20px;
-  padding: 0;
-  padding-right: 20px;
-  padding-bottom: 5px;
+  font-size: 15px;
   width: 190px;
-  opacity: 0;
+  padding: 15px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 1px #000000;
 }
 
 .signup button {
-  border: 0px;
-  position: absolute;
-  background-color: transparent;
-  color: white;
-  right: -15px;
-  top: -6px;
+  position: relative;
+  font-size: 15px;
+  background-color: white;
+  top: 10px;
   height: 40px;
-  width: 40px;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 100%;
   z-index: 1;
   cursor: pointer;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 0;
 }
 
-.signup button.loader {
-    background-size: 60%;
-}
-
-.signup button.loader i {
-  border: 0px;
-}
 
 .done {
   opacity: 0;
@@ -588,40 +577,34 @@ height: 25px;
 }
 
 .input-text {
-  transition: all 0.3s ease-in-out;
-  position: absolute;
+  position: relative;
   z-index: 0;
   font-size: 20px;
-  top: 3px;
-  left: 0;
-  text-align: left;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
   white-space: nowrap;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 .signup input:focus {
-  opacity: 1;
-}
 
-.signup input:focus + .input-text {
-  top: -25px;
-  left: 0px;
-  font-size: 15px;
 }
 
 
-i {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    left: -2px;
+
+label.error {
 position: relative;
+float: left;
+padding-top: 10px;
+color: red;
+font-size: 15px;
+font-style: italic;
+text-align: left;
 }
 
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
+
 
 
 :focus {
@@ -630,14 +613,14 @@ position: relative;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: black;
+font-size: 20px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: black;
+
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: black;
+
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: black;
+
 }

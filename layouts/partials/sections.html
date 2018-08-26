@@ -47,12 +47,12 @@
         {{fields.launchDate}}
       </div>
       <div class="signup">
-        <form id="{{fields.formKeep}}" action="https://formkeep.com/f/{{fields.formKeep}}" method="POST" accept-charset="UTF-8">
+        <form id="{{fields.formKeep}}" action="https://formkeep.com/f/{{fields.formKeep}}" method="POST" accept-charset="UTF-8" required>
           <input type="hidden" name="utf8" value="✓">
           <div class="input-container">
-          <input type="email" id="email-address" name="email">
-          <div class="input-text">{{fields.inputText}}</div>
-          <button type="submit" style="background-image:url('{{fields.inputLoader.fields.file.url}}')"><i class="arrow right"></i></button>
+                <div class="input-text">{{fields.inputText}}</div>
+          <input type="email" placeholder="Enter Email Here" id="email-address" name="email" onClick="return empty()">
+          <button type="submit">Submit</button>
           </div>
         </form>
         <div id="result-{{fields.formKeep}}"></div>
