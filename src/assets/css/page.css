@@ -588,9 +588,7 @@ margin-bottom: 15px;
   border-bottom: 1px solid black;
 }
 
-.signup input:focus {
 
-}
 
 
 
@@ -616,11 +614,11 @@ text-align: left;
 font-size: 20px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-
+font-size: 20px;
 }
 :-ms-input-placeholder { /* IE 10+ */
-
+font-size: 20px;
 }
 :-moz-placeholder { /* Firefox 18- */
-
+font-size: 20px;
 }
