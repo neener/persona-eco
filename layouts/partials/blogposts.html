@@ -1,0 +1,14 @@
+<div class="blogposts">
+  <div class="grid-container">
+    {{#each data.contentTypes.blogPost}}
+    {{sortBy.date}}
+      <div class="grid-item">
+        <img src="{{ fields.mainImage.fields.file.url }}?w=430">
+        <div class="title">{{fields.title}}</div>
+        <div class="date">{{fields.date}}-Design</div>
+        <div class="description">{{fields.mainDescription}}</div>
+        <div class="read-more-link"><a href="#">Read more →</a></div>
+      </div>
+    {{/each}}
+  </div>
+</div>

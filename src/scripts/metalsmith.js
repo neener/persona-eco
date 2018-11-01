@@ -42,6 +42,7 @@ export default new Metalsmith(paths.projectRoot)
     partials: {
       header: 'partials/header',
       blogheader: 'partials/blogheader',
+      blogposts: 'partials/blogposts',
       sections: 'partials/sections',
       footer: 'partials/footer',
       endscripts: 'partials/endscripts'
