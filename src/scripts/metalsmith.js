@@ -27,8 +27,8 @@ export default new Metalsmith(paths.projectRoot)
     destination: './fonts'
   }))
   .use(contentful({
-    space_id: 'pw2rnn4cflle',
-    access_token: '9b3b5e9310586a9c5ef044b426b06afb0960d178a226966cd4c2995bdab678a7'
+    space_id: '6q4g32ksafdn',
+    access_token: 'd67aae2305223411e7e41654312c5c5b083ddf33ff8a4299588effbeac3a70e3'
   }))
   .use(fingerprint({ pattern: 'assets/page.css' }))
   .use(fingerprint({ pattern: 'assets/immediate.js' }))
@@ -41,6 +41,7 @@ export default new Metalsmith(paths.projectRoot)
     default: 'default.html',
     partials: {
       header: 'partials/header',
+      blogheader: 'partials/blogheader',
       sections: 'partials/sections',
       footer: 'partials/footer',
       endscripts: 'partials/endscripts'

@@ -1,9 +1,17 @@
 <header>
-<div id="logo">
-  <div class="entry">
-{{#each data.contentTypes.logo }}
-<img src="{{ fields.logo.fields.file.url }}?w=200">
-{{/each}}
+  <div class="header-links">
+    <a href="#">Shop</a>
+    <a href="#">Learn More</a>
+    <a href="#">Blog</a>
   </div>
-</div>
+  <div id="logo">
+    <div class="entry">
+      {{#each data.contentTypes.logo }}
+      <img src="{{ fields.logo.fields.file.url }}?w=200">
+      {{/each}}
+    </div>
+  </div>
+  <div class="cart-link">
+    <a href="#">Cart(0)</a>
+  </div>
 </header>

@@ -1,0 +1,8 @@
+<div class="blogheader">
+  <div class="container">
+    {{#each data.contentTypes.header}}
+      <div class="title">{{fields.title}}</div>
+      <img src="{{ fields.blogImage.fields.file.url}}">
+    {{/each}}
+  </div>
+</div>

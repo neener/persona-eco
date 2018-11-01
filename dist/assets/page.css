@@ -41,6 +41,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 header {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -57,7 +61,8 @@ display: flex;
         justify-content: center;
 height: 5%;
 width: 100%;
-position: absolute;
+position: static;
+position: initial;
 z-index: 1;
 margin-top: 20px;
 }
@@ -131,6 +136,26 @@ footer ul li img {
 }
 #logo {
   margin-top: 30px;
+}
+.header-links {
+  position: absolute;
+  left: 4%;
+}
+.header-links a {
+  padding-right: 10px;
+}
+.cart-link {
+  position: absolute;
+  right: 4%;
+}
+.blogheader .title {
+  font-size: 144px;
+  margin-top: 6%;
+  margin-left: 4%;
+  float: left;
+}
+.blogheader .container img {
+  margin-top: 4%;
 }
 #splash {
   height: 100vh;
@@ -696,9 +721,6 @@ margin-bottom: 15px;
   white-space: nowrap;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
-}
-.signup input:focus {
-
 }
 label.error {
 position: relative;

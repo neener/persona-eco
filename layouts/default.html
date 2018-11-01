@@ -48,23 +48,25 @@ fbq('track', 'PageView');
   <body>
       {{> header}}
 
-    <div class="container">
-        <section id="splash">
-          {{#each data.contentTypes.splash }}
+      {{> blogheader}}
 
-          <div class="entry">
-            <div class="text-container">
-              <div class="callout">
-                {{fields.callout}}
-              </div>
+    <div class="container">
+      <!-- <section id="splash">
+        {{#each data.contentTypes.splash }}
+
+        <div class="entry">
+          <div class="text-container">
+            <div class="callout">
+              {{fields.callout}}
             </div>
           </div>
-          {{/each}}
-        </section>
-        <div class="content">
-          {{> sections}}
         </div>
+        {{/each}}
+      </section> -->
+      <div class="content">
+        {{> sections}}
       </div>
+    </div>
 
       {{> footer}}
       {{> endscripts}}
